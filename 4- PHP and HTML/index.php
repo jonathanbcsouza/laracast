@@ -1,6 +1,11 @@
+<!-- 
+    Deploy this page by executing "PHP -S localhost:8888" in your terminal.
+    Do not forget do get on the root level of this folder 
+    Add ?name=<YOURNAME> to your address bar
+    E.g : http://localhost:8888/?name=Jonathan-->
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
@@ -14,7 +19,6 @@
         }
     </style>
 </head>
-
 <body>
     <header>
         <h1>
@@ -34,5 +38,4 @@
         </h1>
     </header>
 </body>
-
 </html>
