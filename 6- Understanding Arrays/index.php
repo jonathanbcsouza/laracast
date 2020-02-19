@@ -1,6 +1,7 @@
 <?php
 
 $names = [
+    'First Array Syntax',
     'PHP',
     'Java',
     'Kotlin',
@@ -8,6 +9,7 @@ $names = [
 ];
 
 $names2 = [
+    'Second Array Syntax (Same result)',
     'Dart',
     'Lua',
     'Javascript',
