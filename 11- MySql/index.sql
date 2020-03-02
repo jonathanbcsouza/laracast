@@ -7,7 +7,7 @@ MYSQL INSTALLATION PROCESS:
         brew search mysql: To check your SQL if you used brew to install PHP.
         brew install mysql: You may need to do to fetch that.
         mysql -uroot: to login into the database
-        mysql -uroot: to login into the database if you have a password.
+        mysql -uroot <password>: to login into the database that you already have.
 
 SQL COMMANDS;
  */
