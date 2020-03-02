@@ -1,6 +1,5 @@
 /*
-
-- MYSQL INSTALLATION PROCESS:
+MYSQL INSTALLATION PROCESS:
 
         In your terminal:
         
@@ -10,7 +9,7 @@
         mysql -uroot: to login into the database
         mysql -uroot: to login into the database if you have a password.
 
-- SQL COMMANDS;
+SQL COMMANDS;
  */
 
 show databases;
@@ -104,9 +103,7 @@ select * from todos;
         +----+----------------------+-----------+
         2 rows in set (0.00 sec)
 
-/*
-
-- SUGGESTED MANAGEMENT APPS: 
+SUGGESTED MANAGEMENT APPS: 
 
         - Sequel Pro - https://www.sequelpro.com/
         - Queries - https://www.araelium.com/querious
