@@ -8,7 +8,6 @@ MYSQL INSTALLATION PROCESS:
         brew install mysql: You may need to do to fetch that.
         mysql -uroot: to login into the database
         mysql -uroot <password>: to login into the database that you already have.
-
 SQL COMMANDS;
  */
 
@@ -109,5 +108,20 @@ SUGGESTED MANAGEMENT APPS:
         - Queries - https://www.araelium.com/querious
         - Navicat - https://www.navicat.com/en/
 
-        Useful article that helped to fix a configuration issue I had::
-        https://medium.com/@devontem/solved-cant-connect-to-local-mysql-server-through-socket-tmp-mysql-sock-2-f52c9c546f7 */
+If you get those errors:
+<ERROR 2002 (HY000): Can't connect to local MySQL server through socket '/tmp/mysql.sock' (2)>
+Access denied for user 'root'@'localhost' (using password: NO)
+
+That article that helped to fix a configuration issue I had with Sequel Pro connection:
+https://stackoverflow.com/a/49970533/8339144
+
+--- 
+
+If you have a crash/error when you try to connect with your database:
+
+I found here this:
+https://github.com/sequelpro/sequelpro/issues/3236
+
+Which lead me to:
+https://sequelpro.com/test-builds
+ */
