@@ -15,7 +15,38 @@
 </head>
 
 <body>
-  
+    <h3>Using public class - IF/Else method 1:</h3>
+    <ul>
+        <?php foreach ($tasks as $newTask) : ?>
+            <li>
+                <?php if ($newTask->completed) : ?>
+                    <strike>
+                    <?php endif; ?>
+
+                    <?= $newTask->description; ?>
+
+                    <?php if ($newTask->completed) : ?>
+                    </strike>
+                <?php endif; ?>
+            </li>
+        <?php endforeach; ?>
+    </ul>
+    <h3>Using public class - IF/Else method 2:</h3>
+    <ul>
+        <?php foreach ($tasks as $newTask) : ?>
+            <li>
+                <?php if ($newTask->completed) : ?>
+
+                    <strike><?= $newTask->description; ?></strike>
+
+                <?php else : ?>
+
+                    <?= $newTask->description; ?>
+
+                <?php endif; ?>
+            </li>
+        <?php endforeach; ?>
+    </ul>
 </body>
 
 </html>
