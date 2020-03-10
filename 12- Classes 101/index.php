@@ -10,4 +10,3 @@ $tasks = [
 
 $tasks[1]->complete();
 
-require 'index.view.php';
