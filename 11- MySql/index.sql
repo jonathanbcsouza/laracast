@@ -8,6 +8,7 @@ MYSQL INSTALLATION PROCESS:
         brew install mysql: You may need to do to fetch that.
         mysql -uroot: to login into the database
         mysql -uroot <password>: to login into the database that you already have.
+        
 SQL COMMANDS;
  */
 
@@ -23,9 +24,9 @@ show databases;
         | sys                |
         +--------------------+ */
 
-create database myTodo;
-use myTodo;
-create table todos (description text, completed boolean);
+CREATE DATABASE myTodo;
+USE myTodo;
+CREATE TABLE todos (DESCRIPTION TEXT, completed BOOLEAN);
 
 show tables;
         /* Output
@@ -46,11 +47,11 @@ describe todos;
         +-------------+------------+------+-----+---------+-------+
         2 rows in set (0.01 sec) */
 
-drop table todos;
+DROP TABLE todos;
         /* Output
         Query OK, 0 rows affected (0.01 sec) */
 
-create table todos (description text NOT NULL, completed boolean NOT NULL);
+CREATE TABLE todos (DESCRIPTION TEXT NOT NULL, completed BOOLEAN NOT NULL);
         /* Output
         Query OK, 0 rows affected (0.01 sec) */
 
@@ -64,7 +65,7 @@ describe todos;
         +-------------+------------+------+-----+---------+-------+
         2 rows in set (0.00 sec) */
 
-create table todos (id integer PRIMARY KEY AUTO_INCREMENT, description text NOT NULL, completed boolean NOT NULL);
+CREATE TABLE todos (id INTEGER PRIMARY KEY AUTO_INCREMENT, DESCRIPTION TEXT NOT NULL, completed BOOLEAN NOT NULL);
         /* Output
         Query OK, 0 rows affected (0.01 sec) */
 
@@ -88,10 +89,10 @@ describe todos;
         +-------------+------------+------+-----+---------+----------------+
         3 rows in set (0.00 sec) */
 
-insert into todos (description, completed) values('Go to the store', false);
-insert into todo (description, completed) values('I am the second one!', false);
+INSERT INTO todos (DESCRIPTION, completed) VALUES('Go to the store', false);
+INSERT INTO todo (INTO, completed) VALUES('I am the second one!', false);
 
-select * from todos;
+SELECT * FROM todos;
 
         /* Output
         +----+----------------------+-----------+
