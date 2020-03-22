@@ -19,25 +19,25 @@ show databases;
         +--------------------+
         | information_schema |
         | mysql              |
-        | myTodo             |
+        | myFirstDB             |
         | performance_schema |
         | sys                |
         +--------------------+ */
 
-CREATE DATABASE myTodo;
-USE myTodo;
-CREATE TABLE todos (DESCRIPTION TEXT, completed BOOLEAN);
+CREATE DATABASE myFirstDB;
+USE myFirstDB;
+CREATE TABLE topics (DESCRIPTION TEXT, completed BOOLEAN);
 
 show tables;
         /* Output
         +------------------+
-        | Tables_in_mytodo |
+        | Tables_in_myFirstDB |
         +------------------+
-        | todos            |
+        | topics            |
         +------------------+
         1 row in set (0.01 sec) */
 
-describe todos;
+describe topics;
         /* Output
         +-------------+------------+------+-----+---------+-------+
         | Field       | Type       | Null | Key | Default | Extra |
@@ -47,15 +47,15 @@ describe todos;
         +-------------+------------+------+-----+---------+-------+
         2 rows in set (0.01 sec) */
 
-DROP TABLE todos;
+DROP TABLE topics;
         /* Output
         Query OK, 0 rows affected (0.01 sec) */
 
-CREATE TABLE todos (DESCRIPTION TEXT NOT NULL, completed BOOLEAN NOT NULL);
+CREATE TABLE topics (DESCRIPTION TEXT NOT NULL, completed BOOLEAN NOT NULL);
         /* Output
         Query OK, 0 rows affected (0.01 sec) */
 
-describe todos;
+describe topics;
         /* Output
         +-------------+------------+------+-----+---------+-------+
         | Field       | Type       | Null | Key | Default | Extra |
@@ -65,20 +65,20 @@ describe todos;
         +-------------+------------+------+-----+---------+-------+
         2 rows in set (0.00 sec) */
 
-CREATE TABLE todos (id INTEGER PRIMARY KEY AUTO_INCREMENT, DESCRIPTION TEXT NOT NULL, completed BOOLEAN NOT NULL);
+CREATE TABLE topics (id INTEGER PRIMARY KEY AUTO_INCREMENT, DESCRIPTION TEXT NOT NULL, completed BOOLEAN NOT NULL);
         /* Output
         Query OK, 0 rows affected (0.01 sec) */
 
 show tables;    
         /* Output
         +------------------+
-        | Tables_in_mytodo |
+        | Tables_in_myFirstDB |
         +------------------+
-        | todos            |
+        | topics            |
         +------------------+
         1 row in set (0.00 sec) */
 
-describe todos;
+describe topics;
         /* Output
         +-------------+------------+------+-----+---------+----------------+
         | Field       | Type       | Null | Key | Default | Extra          |
@@ -89,10 +89,10 @@ describe todos;
         +-------------+------------+------+-----+---------+----------------+
         3 rows in set (0.00 sec) */
 
-INSERT INTO todos (DESCRIPTION, completed) VALUES('Go to the store', false);
-INSERT INTO todo (INTO, completed) VALUES('I am the second one!', false);
+INSERT INTO topics (DESCRIPTION, completed) VALUES('Go to the store', false);
+INSERT INTO topics (INTO, completed) VALUES('I am the second one!', false);
 
-SELECT * FROM todos;
+SELECT * FROM topics;
 
         /* Output
         +----+----------------------+-----------+
