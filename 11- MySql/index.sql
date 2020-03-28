@@ -3,11 +3,13 @@ MYSQL INSTALLATION PROCESS:
 
         In your terminal:
         
-        mysql: To check SQL.
-        brew search mysql: To check your SQL if you used brew to install PHP.
-        brew install mysql: You may need to do to fetch that.
-        mysql -uroot: to login into the database
-        mysql -uroot <password>: to login into the database that you already have.
+        1- mysql: To check SQL.
+        2- brew search mysql: To check your SQL if you used brew to install PHP.
+        3- brew install mysql: You may need to do to fetch that.
+        4- mysql -uroot: to login into the database
+        5- mysql -uroot <password>: to login into the database that you already have.
+        
+        Video Tutorial: https://laracasts.com/series/php-for-beginners/episodes/11
         
 SQL COMMANDS;
  */
