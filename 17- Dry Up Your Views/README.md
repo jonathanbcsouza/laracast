@@ -4,4 +4,4 @@
 
 1.Run the server in this folder.
 
-![Database visualization](/db-visualization.png)
+![Database visualization](/Screenshots/db-visualization.png)
