@@ -111,7 +111,7 @@ SUGGESTED MANAGEMENT APPS:
         - Queries - https://www.araelium.com/querious
         - Navicat - https://www.navicat.com/en/
 
-If you get those errors:
+If you get these errors:
 <ERROR 2002 (HY000): Can't connect to local MySQL server through socket '/tmp/mysql.sock' (2)>
 Access denied for user 'root'@'localhost' (using password: NO)
 
