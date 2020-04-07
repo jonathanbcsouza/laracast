@@ -4,11 +4,11 @@ This repository has my solutions for the above online course.
 The code is a guideline if you get study throughout the course.
 I have created some additional, but simple new features to make the UI a bit better and more understable.
 
-- One folder per each course "step".
+- One folder per each course episode.
 
-- Different and alternative ways to use the same command as [this](/4-%20PHP%20and%20HTML/index.php) example.
+- Alternative ways to some exercises like [this](/4-%20PHP%20and%20HTML/index.php) example.
 
-- php.index files ready for visualization.
+- Each folder ready for visualization.
 
 <hr>
 
@@ -60,9 +60,9 @@ composer dump-autoload
 ```
 ![composer dump-autoload](https://media.giphy.com/media/Ib6i1vCy6I7IggiQbD/giphy.gif)
 
-*Composer is a tool for dependency management in PHP. 
-This step allows you to download and update all dependent libraries for this project.
-The _vendor_ folder will be generated when you run the Composer in your root project folder. I have excluded it keeping it is not a good practice. When you execute the step 3, this will folder will be downloaded to your work directory.
+_Composer is a tool for dependency management in PHP. 
+It allows you to download and update all dependent libraries for this project.
+The vendor folder will be generated when you run the Composer in the root of your project folder. When you execute the step 3, this folder will be downloaded to your work directory._
 
 
 [This](https://laracasts.com/series/php-for-beginners/episodes/21) this is the related lesson.
@@ -72,7 +72,7 @@ The _vendor_ folder will be generated when you run the Composer in your root pro
 PHP -S localhost:8888 (or the desired port)
 ```
 <hr>
--..
+Special thanks to @JeffreyWay.
 
 
 
