@@ -72,6 +72,9 @@ The vendor folder will be generated when you run the Composer in the root of you
 PHP -S localhost:8888 (or the desired port)
 ```
 <hr>
+## Thanks: 
+
+<br>
 Special thanks to @JeffreyWay.
 
 

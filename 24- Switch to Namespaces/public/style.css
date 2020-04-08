@@ -1,0 +1,47 @@
+            * {
+                background: black;
+                color: white;
+            }
+
+            h3 {
+                color: orange;
+            }
+
+            hr {
+                border-color: #fed8b1;
+            }
+
+            table {
+                font-family: arial, sans-serif;
+                border-collapse: collapse;
+                width: 100%;
+            }
+
+            td, th {
+                border: 1px solid #dddddd;
+                text-align: left;
+                padding: 8px;
+            }
+
+            tr:nth-child(even) {
+                background-color: #dddddd;
+            }
+
+            ul.topnav {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: auto;
+            }
+
+            ul.topnav a {
+                float: left;
+                display: block;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+            ul.topnav li a:hover {
+                background-color: rgb(46, 45, 45);
+            }
