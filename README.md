@@ -20,7 +20,12 @@ I have created some additional, but simple new features to make the UI a bit bet
 git clone https://github.com/jonathanbcsouza/laracast.git
 ```
 
-2. #### Open the root folder and run the server:  
+2. #### Go to the root of the desired folder 
+```
+cd Booleans
+```
+
+3. #### Run the server:  
 ```
 PHP -S localhost:8888 (or the desired port)
 ```
@@ -37,7 +42,12 @@ PHP -S localhost:8888 (or the desired port)
 git clone https://github.com/jonathanbcsouza/laracast.git
 ```
 
-2. #### Open the root folder and execute: 
+2. #### Go to the root of the desired folder 
+```
+cd 22-\ Your\ First\ DI\ Container
+```
+
+3. #### Run the server:
 ```
 PHP -S localhost:8888 (or the desired port)
 ```
@@ -50,11 +60,16 @@ PHP -S localhost:8888 (or the desired port)
 ```
 git clone https://github.com/jonathanbcsouza/laracast.git
 ```
-1. #### Install composer 
+
+2. #### Go to the root of the desired folder 
 ```
-git clone https://github.com/jonathanbcsouza/laracast.git
+cd cd 24-\ Switch\ to\ Namespaces
 ```
-3. #### Install dependencies  
+
+3. #### Install composer as per this link:
+https://getcomposer.org/download/
+
+4. #### Install dependencies  
 ```
 composer dump-autoload
 ```
@@ -67,7 +82,7 @@ The vendor folder will be generated when you run the Composer in the root of you
 
 [This](https://laracasts.com/series/php-for-beginners/episodes/21) this is the related lesson.
 
-4. #### Open the root folder and execute:  
+4. #### Run the server:   
 ```
 PHP -S localhost:8888 (or the desired port)
 ```
