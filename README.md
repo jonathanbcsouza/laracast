@@ -1,7 +1,7 @@
 ## The Laracast PHP Practitioner Course - [Laracast Course Link](https://laracasts.com/series/php-for-beginners)
 
 This repository has my solutions for the above online course.
-The code is a guideline if you get study throughout the course.
+The code is a guideline if you get stuck throughout the course.
 I have created some additional, but simple new features to make the UI a bit better and more understable.
 
 - One folder per each course episode.
