@@ -8,45 +8,44 @@
     <style>
         ul {
             background: black;
-            padding: 2em;
+            padding: 20px;
             color: white;
+        }
+        li{
+            margin: 10px;
         }
     </style>
 </head>
 
 <body>
-    <h3>Using public class - IF/Else method 1:</h3>
-    <ul>
-        <?php foreach ($tasks as $newTask) : ?>
-            <li>
-                <?php if ($newTask->completed) : ?>
-                    <strike>
-                    <?php endif; ?>
-
-                    <?= $newTask->description; ?>
-
-                    <?php if ($newTask->completed) : ?>
-                    </strike>
-                <?php endif; ?>
-            </li>
-        <?php endforeach; ?>
-    </ul>
-    <h3>Using public class - IF/Else method 2:</h3>
-    <ul>
-        <?php foreach ($tasks as $newTask) : ?>
-            <li>
-                <?php if ($newTask->completed) : ?>
-
-                    <strike><?= $newTask->description; ?></strike>
-
-                <?php else : ?>
-
-                    <?= $newTask->description; ?>
-
-                <?php endif; ?>
-            </li>
-        <?php endforeach; ?>
-    </ul>
+<h3>Using Public Classes</h3>
+<h4>Example 1:</h4>
+<ul>
+    <?php foreach ($tasks as $task) : ?>
+        <li>
+            <?php if ($task->completed) : ?>
+                <s>
+            <?php endif; ?>
+                <?= $task->description; ?>
+            <?php if ($task->completed) : ?>
+                </s>
+        <?php endif; ?>
+        </li>
+    <?php endforeach; ?>
+    <?php ?>
+</ul>
+<h4>Example 2:</h4>
+<ul>
+    <?php foreach ($tasks as $task) : ?>
+        <li>
+            <?php if ($task->completed) : ?>
+                <s><?= $task->description; ?></s>
+            <?php else : ?>
+                <?= $task->description; ?>
+            <?php endif; ?>
+        </li>
+    <?php endforeach; ?>
+</ul>
 </body>
 
 </html>
