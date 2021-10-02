@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
@@ -13,40 +12,38 @@
         }
     </style>
 </head>
-
 <body>
-    <h3>Using public class - IF/Else method 1:</h3>
+    <h3>Rendering local database - method 1:</h3>
     <ul>
-        <?php foreach ($tasks as $newTask) : ?>
+        <?php foreach ($data as $task) : ?>
             <li>
-                <?php if ($newTask->completed) : ?>
-                    <strike>
+                <?php if ($task->is_completed) : ?>
+                    <s>
                     <?php endif; ?>
 
-                    <?= $newTask->description; ?>
+                    <?= $task->description; ?>
 
-                    <?php if ($newTask->completed) : ?>
-                    </strike>
+                    <?php if ($task->is_completed) : ?>
+                    </s>
                 <?php endif; ?>
             </li>
         <?php endforeach; ?>
     </ul>
-    <h3>Using public class - IF/Else method 2:</h3>
+    <h3>Rendering local database - method 2:</h3>
     <ul>
-        <?php foreach ($tasks as $newTask) : ?>
+        <?php foreach ($data as $task) : ?>
             <li>
-                <?php if ($newTask->completed) : ?>
+                <?php if ($task->is_completed) : ?>
 
-                    <strike><?= $newTask->description; ?></strike>
+                    <s><?= $task->description; ?></s>
 
                 <?php else : ?>
 
-                    <?= $newTask->description; ?>
+                    <?= $task->description; ?>
 
                 <?php endif; ?>
             </li>
         <?php endforeach; ?>
     </ul>
 </body>
-
 </html>

@@ -1,18 +1,11 @@
 <?php
 
 require 'functions.php';
-require 'TaskClass.php';
 
 $pdo = connectToMyFirstDB();
 
-function fetchAllTasks($pdo)
-{
-
-    $statement = $pdo->prepare('select * from topics');
-
-    $statement->execute();
-
-    return $statement->fetchAll(PDO::FETCH_OBJ, 'TaskClass.php');
-}
+$statement = $pdo->prepare('SELECT * FROM tasks');
+$statement->execute();
+$data = $statement->fetchAll(PDO::FETCH_OBJ);
 
 require 'index.view.php';
