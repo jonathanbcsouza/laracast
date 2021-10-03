@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
@@ -13,32 +12,32 @@
         }
     </style>
 </head>
-
 <body>
-    <h1>Task for the Day</h1>
+<?php require '../nav.php'; ?>
 
-    <ul>
-        <li>
-            <strong>Name: </strong>
-            <?= ucwords($task['title']); ?>
-        </li>
-        <li>
-            <strong>Due: </strong>
-            <?= ucwords($task['due']); ?>
-        </li>
-        <li>
-            <strong>Personal Responsible: </strong>
-            <?= ucwords($task['assigned_to']); ?>
-        </li>
-        <li>
-            <strong>Status: </strong>
-            <?= ucwords($task['completed']) ? 'Complete' : 'Incomplete'; ?>
-        </li>
-        <li>
-            <strong>Status: </strong>
-            <?= ucwords($task['completed2']) ? 'Complete' : 'Incomplete'; ?>
-        </li>
-    </ul>
+<h1>Task for the Day</h1>
+<ul>
+    <li>
+        <strong>Name: </strong>
+        <?= ucwords($task['title']); ?>
+    </li>
+    <li>
+        <strong>Due: </strong>
+        <?= ucwords($task['due']); ?>
+    </li>
+    <li>
+        <strong>Personal Responsible: </strong>
+        <?= ucwords($task['assigned_to']); ?>
+    </li>
+    <li>
+        <strong>Status 1: </strong>
+        <?= ucwords($task['completed']) ? 'Complete' : 'Incomplete'; ?>
+    </li>
+    <li>
+        <strong>Status 2: </strong>
+        <?= ucwords($task['completed2']) ? 'Complete' : 'Incomplete'; ?>
+    </li>
+</ul>
 </body>
 
 </html>

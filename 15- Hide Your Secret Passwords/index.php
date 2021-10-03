@@ -2,7 +2,6 @@
 
 require 'bootstrap.php';
 
-$tasksFromLocalDB = $query->selectAll('topics');
-
+$tasksFromLocalDB = $query->selectAll('tasks');
 
 require 'index.view.php';

@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
@@ -16,8 +15,8 @@
         }
     </style>
 </head>
-
 <body>
+<?php require '../nav.php'; ?>
 <h3>Using Public Classes</h3>
 <h4>Example 1:</h4>
 <ul>
@@ -47,5 +46,4 @@
     <?php endforeach; ?>
 </ul>
 </body>
-
 </html>

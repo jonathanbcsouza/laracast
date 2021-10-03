@@ -13,6 +13,7 @@
     </style>
 </head>
 <body>
+<?php require '../nav.php'; ?>
     <h3>Rendering local database - method 1:</h3>
     <ul>
         <?php foreach ($data as $task) : ?>

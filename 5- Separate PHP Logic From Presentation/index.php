@@ -1,9 +1,6 @@
 <?php
 
-$greeting = "Hello, World";
-
-echo  nl2br("\n");
-
-$sentence = "All this data and styling data came from the index.view.php";
+$greeting = "Hello, World.";
+$sentence = "The data came from the index.php.";
 
 require 'index.view.php';

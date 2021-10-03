@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
@@ -26,42 +25,45 @@
         }
     </style>
 </head>
-
 <body>
-    <h3>My Local Database Output Visualization</h3>
-    <table>
+<?php require '../nav.php'; ?>
+<h3>My Local Database Output Visualization</h3>
+<table>
+    <tr>
+        <th>id</th>
+        <th>description</th>
+        <th>completed</th>
+    </tr>
+    <?php foreach ($tasksFromLocalDB as $task) : ?>
         <tr>
-            <th>id</th>
-            <th>description</th>
-            <th>completed</th>
+            <td>
+                <?= $task->id; ?>
+            </td>
+            <td>
+                <?= $task->description; ?>
+            </td>
+            <td>
+                <?= $task->is_completed; ?>
+            </td>
         </tr>
-        <?php foreach ($tasksFromLocalDB as $task) : ?>
-            <tr>
-                <td> <?= $task->id; ?>
-                </td>
-                <td> <?= $task->description; ?>
-                </td>
-                <td> <?= $task->completed; ?>
-                </td>
-            </tr>
-        <?php endforeach; ?>
-    </table>
-    <h3>Method to strikethrough completed tasks</h3>
-    <ul>
-        <?php foreach ($tasksFromLocalDB as $newTask) : ?>
-            <li>
-                <?php if ($newTask->completed) : ?>
+    <?php endforeach; ?>
+</table>
+<h3>Method to strikethrough completed tasks</h3>
+<ul>
+    <?php foreach ($tasksFromLocalDB as $newTask) : ?>
+        <li>
+            <?php if ($newTask->is_completed) : ?>
 
-                    <strike><?= $newTask->description; ?></strike>
+                <s><?= $newTask->description; ?></s>
 
-                <?php else : ?>
+            <?php else : ?>
 
-                    <?= $newTask->description; ?>
+                <?= $newTask->description; ?>
 
-                <?php endif; ?>
-            </li>
-        <?php endforeach; ?>
-    </ul>
+            <?php endif; ?>
+        </li>
+    <?php endforeach; ?>
+</ul>
 </body>
 
 </html>

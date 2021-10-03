@@ -1,7 +1,6 @@
 <?php
 
-class Router
-{
+class Router {
     protected $routes = [];
 
     public static function load($file)

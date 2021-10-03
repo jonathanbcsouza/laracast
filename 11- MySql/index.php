@@ -44,18 +44,18 @@
         +--------------------+
         | information_schema |
         | mysql              |
-        | myFirstDB          |
+        | MY_FIRST_DB          |
         | performance_schema |
         | sys                |
         +--------------------+
     <code>
-    CREATE database myFirstDB;
-    USE myFirstDB;
+    CREATE database MY_FIRST_DB;
+    USE MY_FIRST_DB;
     CREATE TABLE topics (DESCRIPTION TEXT, completed BOOLEAN);
     SHOW TABLES;
     </code>
         +----------------------+
-        | Tables_in_myFirstDB  |
+        | Tables_in_MY_FIRST_DB  |
         +----------------------+
         | topics               |
         +----------------------+
@@ -84,7 +84,7 @@
     SHOW TABLES;
     </code>
         +---------------------+
-        | Tables_in_myFirstDB |
+        | Tables_in_MY_FIRST_DB |
         +---------------------+
         | topics              |
         +---------------------+

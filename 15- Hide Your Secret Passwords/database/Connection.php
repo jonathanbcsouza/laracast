@@ -1,7 +1,6 @@
 <?php
 
-class Connection
-{
+class Connection {
 
      public static function make($config)
      {

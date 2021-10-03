@@ -3,7 +3,7 @@
 function connectToMyFirstDB()
 {
      $host = '127.0.0.1';
-     $dbname = 'PHP_Learning';
+     $dbname = 'MY_FIRST_DB';
      $user = 'root';
      $pass = '';
      $charset = 'utf8mb4';

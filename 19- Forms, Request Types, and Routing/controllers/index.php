@@ -2,4 +2,4 @@
 
 $tasksFromLocalDB = $app['database']->selectAll('topics');
 
-require 'views/index.view.php';
+require 'views/index.php';

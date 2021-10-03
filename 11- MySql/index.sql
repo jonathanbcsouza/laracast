@@ -22,18 +22,18 @@ SHOW databases
     +--------------------+
     | information_schema |
     | mysql              |
-    | myFirstDB          |
+    | MY_FIRST_DB          |
     | performance_schema |
     | sys                |
     +--------------------+
 */
 
-CREATE database myFirstDB;
-USE myFirstDB;
+CREATE database MY_FIRST_DB;
+USE MY_FIRST_DB;
 CREATE TABLE topics (DESCRIPTION TEXT, completed BOOLEAN);
 SHOW TABLES;
 /*  +----------------------+
-    | Tables_in_myFirstDB  |
+    | Tables_in_MY_FIRST_DB  |
     +----------------------+
     | topics               |
     +----------------------+
@@ -62,7 +62,7 @@ DESCRIBE topics;
 CREATE TABLE topics (id INTEGER PRIMARY KEY AUTO_INCREMENT, DESCRIPTION TEXT NOT NULL, completed BOOLEAN NOT NULL);
 SHOW TABLES;
 /*  +---------------------+
-    | Tables_in_myFirstDB |
+    | Tables_in_MY_FIRST_DB |
     +---------------------+
     | topics              |
     +---------------------+

@@ -6,7 +6,7 @@ class Connection
      public static function make()
      {
 
-          $db   = 'MyFirstDB';
+          $db   = 'MY_FIRST_DB';
           $user = 'root';
           $pass = '';
 

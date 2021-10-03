@@ -7,15 +7,15 @@
     <style>
         h1 {
             background: black;
-            padding: 2em;
+            padding: 20vh;
             text-align: center;
             color: white;
         }
     </style>
 </head>
 <body>
+<?php require '../nav.php'; ?>
     <header>
-       
         <h1>
             <?= $greeting; ?>
         </h1>
