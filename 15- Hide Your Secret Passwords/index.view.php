@@ -35,7 +35,7 @@
         <th>description</th>
         <th>completed</th>
     </tr>
-    <?php foreach ($tasksFromLocalDB as $task) : ?>
+    <?php foreach ($data as $task) : ?>
         <tr>
             <td>
                 <?= $task->id; ?>
@@ -51,16 +51,12 @@
 </table>
 <h3>Method to strikethrough completed tasks</h3>
 <ul>
-    <?php foreach ($tasksFromLocalDB as $newTask) : ?>
+    <?php foreach ($data as $newTask) : ?>
         <li>
             <?php if ($newTask->is_completed) : ?>
-
                 <s><?= $newTask->description; ?></s>
-
             <?php else : ?>
-
                 <?= $newTask->description; ?>
-
             <?php endif; ?>
         </li>
     <?php endforeach; ?>
