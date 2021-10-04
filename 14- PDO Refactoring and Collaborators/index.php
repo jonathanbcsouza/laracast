@@ -1,7 +1,7 @@
 <?php
 
-require 'bootstrap.php';
+$query = require 'bootstrap.php';
 
-$tasksFromLocalDB = $query->selectAll('tasks');
+$data = $query->selectAll('tasks');
 
 require 'index.view.php';

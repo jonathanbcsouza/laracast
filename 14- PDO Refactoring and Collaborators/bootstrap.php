@@ -3,7 +3,7 @@
 require 'database/Connection.php';
 require 'database/QueryBuilder.php';
 
-$query = new QueryBuilder(
-    Connection::make()
+return new MyQueryBuilder(
+    MyConnection::make()
 );
 
