@@ -43,19 +43,24 @@ PHP -S localhost:8888 (or the desired port)
    Create your own local database.
    Laracast's lessons available at [this link](https://laracasts.com/series/php-for-beginners/episodes/11) video and as per [this](/11-%20MySql/index.sql) code example.
 
-1. #### Clone this repository
+2. #### Run MySQL server
 
 ```
-git clone https://github.com/jonathanbcsouza/laracast.git
+mysql.server start
 ```
 
-2. #### Go to the root of the desired folder
+3. #### Run MySQL on your terminal if you wish
+```
+mysql -u root
+```
+
+4. #### Go to the root of the desired folder
 
 ```
 cd 22-\ Your\ First\ DI\ Container
 ```
 
-3. #### Run the server:
+5. #### Run the server:
 
 ```
 PHP -S localhost:8888 (or the desired port)
@@ -65,23 +70,17 @@ PHP -S localhost:8888 (or the desired port)
 
 #### Folders 21 to 25
 
-1. #### Clone this repository
-
-```
-git clone https://github.com/jonathanbcsouza/laracast.git
-```
-
-2. #### Go to the root of the desired folder
+1. #### Go to the root of the desired folder
 
 ```
 cd 24- Switch to Namespaces
 ```
 
-3. #### Install composer as per this link:
+2. #### Install composer as per this link:
 
    https://getcomposer.org/download/
 
-4. #### Install dependencies
+3. #### Install dependencies
 
 ```
 composer dump-autoload
