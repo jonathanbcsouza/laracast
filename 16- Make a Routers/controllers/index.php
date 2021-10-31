@@ -1,5 +1,5 @@
 <?php
 
-$tasksFromLocalDB = $app['MY_FIRST_DB']->selectAll('tasks');
+$data = $app['query']->selectAll('tasks');
 
-require 'views/index.php';
+require 'views/index.view.php';

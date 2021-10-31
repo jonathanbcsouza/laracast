@@ -5,7 +5,7 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>My Document</title>
     <style>
-        ul{
+        ul {
             background: black;
             padding: 2em;
             color: white;
@@ -28,14 +28,6 @@
 </head>
 <body>
 <?php require '../nav.php'; ?>
-<nav>
-    <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/about">About</a></li>
-        <li><a href="/about/culture">Our Culture</a></li>
-        <li><a href="/contact">Contact</a></li>
-    </ul>
-</nav>
 <h3>My Local Database Output Visualization</h3>
 <table>
     <tr>
@@ -43,33 +35,31 @@
         <th>description</th>
         <th>completed</th>
     </tr>
-    <?php foreach ($tasksFromLocalDB as $task) : ?>
+    <?php foreach ($data as $task) : ?>
         <tr>
-            <td> <?= $task->id; ?>
+            <td>
+                <?= $task->id; ?>
             </td>
-            <td> <?= $task->description; ?>
+            <td>
+                <?= $task->description; ?>
             </td>
-            <td> <?= $task->is_completed; ?>
+            <td>
+                <?= $task->is_completed; ?>
             </td>
         </tr>
     <?php endforeach; ?>
 </table>
 <h3>Method to strikethrough completed tasks</h3>
 <ul>
-    <?php foreach ($tasksFromLocalDB as $newTask) : ?>
+    <?php foreach ($data as $newTask) : ?>
         <li>
             <?php if ($newTask->is_completed) : ?>
-
                 <s><?= $newTask->description; ?></s>
-
             <?php else : ?>
-
                 <?= $newTask->description; ?>
-
             <?php endif; ?>
         </li>
     <?php endforeach; ?>
 </ul>
 </body>
-
 </html>
