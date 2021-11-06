@@ -1,8 +1,10 @@
 <?php
 
-class MyConnection {
+class MyConnection
+{
 
-    public static function make($config) {
+    public static function make($config)
+    {
 
         try {
             return new PDO(
