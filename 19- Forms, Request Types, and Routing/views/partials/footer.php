@@ -1,4 +1,5 @@
 </body>
 <hr>
-<h3>The footer</h3>
+<h3>Your footer</h3>
+
 </html>
