@@ -3,8 +3,9 @@
 $app['database']->insert(
     'users',
     [
-        'name' => $_POST['name'], 'age' => $_POST['age'],
-    ]
+        'name' => $_POST['name'],
+    ],
 );
 
-header('Location: / ');
+
+header('Location: /');

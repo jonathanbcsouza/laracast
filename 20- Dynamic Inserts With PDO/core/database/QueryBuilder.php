@@ -1,6 +1,5 @@
 <?php
 
-
 class QueryBuilder
 {
 
@@ -31,12 +30,10 @@ class QueryBuilder
         );
 
         try {
- 
             $statement = $this->pdo->prepare($sql);
             $statement->execute($parameters);
         } catch (Exception $e) {
-
-            die('There is something wrong');
+            die('There is something wrong..');
         }
     }
 }
