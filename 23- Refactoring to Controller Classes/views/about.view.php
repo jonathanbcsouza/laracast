@@ -1,9 +1,7 @@
 <?php require 'partials/header.php' ?>
 <?php require 'partials/nav.php' ?>
 
-<h1>About us</h1>
+<h2>About <?= $company; ?></h2>
+<p>This is the <strong> <?php echo basename($_SERVER['PHP_SELF']) ?></strong> page content.</p>
 
-<p>This is the <strong> <?php echo basename($_SERVER['PHP_SELF'])?></strong> page content.
-</p>
-
-<?php require 'partials/footer.php' ?>
+<?php require  'partials/footer.php' ?>
