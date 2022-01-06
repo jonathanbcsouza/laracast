@@ -1,4 +1,4 @@
-<h3>This is my nav bar:</h3>
+<h3>Your nav bar:</h3>
 <nav>
     <ul>
         <li><a href="/">Home</a></li>

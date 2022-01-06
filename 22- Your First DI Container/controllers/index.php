@@ -1,5 +1,5 @@
 <?php
 
-$users = App::get('database')->selectAll('users');
+$data = App::get('database')->selectAll('users');
 
-require 'views/index.php';
+require 'views/index.view.php';

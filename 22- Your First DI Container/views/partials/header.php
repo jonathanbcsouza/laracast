@@ -7,7 +7,6 @@
         <meta charset='utf-8'>
         <meta http-equiv='X-UA-Compatible' content='IE=edge'>
         <title>My Document</title>
-
         <style>
             * {
                 background: black;
@@ -38,6 +37,5 @@
             tr:nth-child(even) {
                 background-color: #dddddd;
             }
-
         </style>
     </head>
