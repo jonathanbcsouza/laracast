@@ -1,5 +1,5 @@
 <?php
 
-$users = $app['database']->selectAll('users');
+$data = $app['database']->selectAll('users');
 
-require 'views/index.php';
+require 'views/index.view.php';

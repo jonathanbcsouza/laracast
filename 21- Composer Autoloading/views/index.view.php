@@ -1,31 +1,39 @@
 <?php require 'partials/header.php' ?>
 <?php require 'partials/nav.php' ?>
 
-<h1>Submit your Name</h1>
+<h3>Current Data:</h3>
 
-<form method="POST" action="/names">
-    <input name="name" placeholder="User" ></input>
-    <input name="age" placeholder="Age"></input>
-    <button type="submit">Submit</button>
-</form>
-<br>
-<hr>
-<h3>My Local Database Visualization</h3>
 <table>
     <tr>
-        <th>User</th>
-        <th>Age</th>
+        <th>id</th>
+        <th>name</th>
+        <th>age</th>
     </tr>
-    <?php foreach ($users as $user) : ?>
+    <?php foreach ($data as $user) : ?>
         <tr>
-            <td> <?= $user->name; ?>
+            <td>
+                <?= $user->id; ?>
             </td>
-            <td> <?= $user->age; ?>
+            <td>
+                <?= $user->name; ?>
+            </td>
+            <td>
+                <?= $user->age; ?>
             </td>
         </tr>
     <?php endforeach; ?>
 </table>
 
-<br>
+<hr>
+<h3>Submit your name:</h3>
+<form method="POST" action="/names">
+    <label>
+        <input placeholder="name" name="name">
+    </label>
+    <label>
+        <input placeholder="age" name="age">
+    </label>
+    <button type="submit">Submit</button>
+</form>
 
 <?php require 'partials/footer.php' ?>

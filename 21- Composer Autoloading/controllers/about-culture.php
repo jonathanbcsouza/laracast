@@ -1,5 +1,5 @@
 <?php
 
-$website = 'Jonathan';
+$website = 'example.com';
 
 require 'views/about-culture.view.php';
