@@ -44,14 +44,15 @@ class Router
     protected function callAction($controller, $action)
     {
         $controller = "App\\Controllers\\{$controller}";
-        $controllerObject = new $controller;
 
-        if (!method_exists($controllerObject, $action)) {
+        $controller = new $controller;
+
+        if (!method_exists($controller, $action)) {
             throw new Exception(
                 "{$controller} does not respond to the {$action} action."
             );
         }
 
-        return $controllerObject->$action();
+        return $controller->$action();
     }
 }
