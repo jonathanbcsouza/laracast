@@ -1,5 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
 <style>
     * {
         background: black;
@@ -15,9 +22,10 @@
     }
 
     table {
-        font-family: arial, sans-serif;
         border-collapse: collapse;
+        table-layout: auto;
         width: 100%;
+        column-width: auto;
     }
 
     td,
@@ -25,52 +33,63 @@
         border: 1px solid #dddddd;
         text-align: left;
         padding: 8px;
+        white-space: nowrap;
+        "
+
     }
 
     tr:nth-child(even) {
         background-color: #dddddd;
     }
-
 </style>
 
 <body>
-    <h1>My Local Database Visualization</h1>
+
+    <h3>All Users</h3>
+
     <table>
         <tr>
-            <th>User</th>
-            <th>Age</th>
+            <th>name</th>
+            <th>email</th>
+            <th>created_at</th>
+            <th>password</th>
         </tr>
-        @foreach ($users as $user)
-        <tr>
-            <td> {{ $user->name}}
-            </td>
-            <td> {{ $user->email}}
-            </td>
-        </tr>
-        @endforeach
+        <?php foreach ($users as $user) : ?>
+            <tr>
+                <td>
+                    <?= $user->name; ?>
+                </td>
+                <td>
+                    <?= $user->email; ?>
+                </td>
+                <td>
+                    <?= $user->created_at; ?>
+                </td>
+                <td>
+                    <?= $user->password; ?>
+                </td>
+            </tr>
+        <?php endforeach; ?>
     </table>
-    <hr>
-
-    <h3>Submit a new name</h3>
-
-    <form method="POST" action="/users">
-        {{csrf_field()}}
-        <p><input type="text" name="name" placeholder="Name" required></input></p>
-        <p> <input type="email" name="email" placeholder="Email Address" required></input></p>
-        <p> <input type="password" name="password" placeholder="Password" required></input></p>
-        <button type="submit">Submit</button>
-    </form>
     <br>
-</body>
-<hr>
+    <hr>
+    <h3>Add A New User</h3>
 
-<div id="footer">
-    <h3>The footer</h3>
-    <p>Full code available at:
-        <a href="https://github.com/jonathanbcsouza/laracast">https://github.com/jonathanbcsouza/laracast</a>
-        <br>Course episode:
-        <a href="https://laracasts.com/series/php-for-beginners/episodes/25">https://laracasts.com/series/php-for-beginners/episodes/24</a>
-    </p>
-</div>
+    <form method="POST" , action="/users">
+        {{ csrf_field() }}
+        <p>
+            <input type="text" , name="name" , placeholder="Name" , required>
+        </p>
+        <p>
+            <input type="email" , name="email" , placeholder="Email Address" , required>
+        </p>
+        <p>
+            <input type="password" , name="password" , placeholder="Password" , required>
+        </p>
+        <p>
+            <button type="submit">Add User</button>
+        </p>
+    </form>
+</body>
 
 </html>
