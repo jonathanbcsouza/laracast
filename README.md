@@ -1,86 +1,79 @@
 ## The Laracast PHP Practitioner Course - [Laracast Course Link](https://laracasts.com/series/php-for-beginners)
 
-This repository has my solutions for the above online course.
-The purpose of this repository is to provide a guideline for the exercises if you get stuck throughout the course.
-I have also created some additional implementations comparing with the course to make the UI more understable.
+This repository has the solutions for the above online course.
+The purpose here is to provide a guideline for the exercises if you get stuck within the lesson's code.
+I have implemented some HTML to render data from the local database on the browser.
 
-- One folder per each course episode.
+Contents:
 
-- Alternative solution for some the exercises, [example](/4-%20PHP%20and%20HTML/index.php).
+- One folder per course episode.
 
-- Each folder ready for visualization.
+- Alternative solutions for some exercises, [example](/4-%20PHP%20and%20HTML/index.php).
+
+- Database visualizations for all related exercises.
 
 <hr>
 
 ## Running and visualising locally:
 
-#### Folders 1 to 10
-
-1. #### Clone this repository
+1. Clone this repository
 
 ```
 git clone https://github.com/jonathanbcsouza/laracast.git
 ```
 
-2. #### Go to the root of the desired folder, example:
+#### Folders 1 to 10
 
-```
-cd 8-\ Booleans
-```
-
-3. #### Within the exercise folder, run the server:
+1. Within the root folder, run the server:
 
 ```
 PHP -S localhost:8888 (or the desired port)
 ```
 
+2. Open your browser and use the menu to navigate
+
 <hr>
 
-#### Folders 11 to 20
+#### Folders 12 to 15
 
-1. #### Create your local database
-
-   Create your own local database.
-   Laracast's lessons available at [this link](https://laracasts.com/series/php-for-beginners/episodes/11) video and as per [this](/11-%20MySql/index.sql) code example.
-
-2. #### Run MySQL server
+1. Create your local database
+   Laracast's lessons available on [this](https://laracasts.com/series/php-for-beginners/episodes/11).
+   You can also refer to [this](/11-%20MySql/index.sql) example that outlines all the necessary SQL commands.
+   <br>
+2. Run your MySQL server
 
 ```
 mysql.server start
 ```
 
-3. #### Run MySQL on your terminal if you wish
+3. Run MySQL on your terminal if you wish
+
 ```
 mysql -u root
 ```
 
-4. #### Go to the root of the desired folder
-
-```
-cd 22-\ Your\ First\ DI\ Container
-```
-
-5. #### Run the server:
+4. Within the root folder, run the server:
 
 ```
 PHP -S localhost:8888 (or the desired port)
 ```
 
+5. Open your browser and use the menu to navigate
+
 <hr>
 
-#### Folders 21 to 25
+#### Folders 21 to 24
 
-1. #### Go to the root of the desired folder
+1. Install composer:
+   https://getcomposer.org/download/
+
+2. Considering that you have already created a local database with MYSQL, in your terminal, go to the desired folder
 
 ```
 cd 24- Switch to Namespaces
 ```
 
-2. #### Install composer as per this link:
-
-   https://getcomposer.org/download/
-
-3. #### Install dependencies
+3. Generate the list of all classes that need to be included in the project
 
 ```
 composer dump-autoload
@@ -94,14 +87,27 @@ _Composer is an application-level package manager for PHP.
 It allows you to download and managing dependencies for your project.
 The vendor folder will be generated when you run the Composer in the root of your project folder. When you execute the step 3, this folder will be downloaded into your work directory._
 
-4. #### Run the server:
+4. Run the server in the same folder you are. (not the root of this repo)
 
 ```
 PHP -S localhost:8888 (or the desired port)
 ```
 
+#### Folders 25
+
+1. Download composer https://getcomposer.org/download/ and install it if you have not yet.
+2. Considering that you have already created a local database with MYSQL, in your terminal, go to the folder 25
+
+```
+cd 25-\ Meet\ Your\ Batteries\ Included\ Framework:\ Laravel
+```
+
+3. Rename .env.example file to .env and fill the database information.
+4. Run composer install or php composer.phar install
+5. Run php artisan key:generate
+6. Run php artisan migrate
+7. Run php artisan serve
+
 <hr>
 ## Thanks:
-
-<br>
 Special thanks to @JeffreyWay.
